@@ -1,0 +1,48 @@
+HELP.md
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# IDEs
+*.iml
+.idea/
+*.ipr
+*.iws
+*.class
+.project
+.classpath
+.settings/
+.springBeans
+.sts4-cache
+.apt_generated
+.factorypath
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Wrapper
+.mvn/
+!**/src/main/**/target/
+!**/src/test/**/target/
