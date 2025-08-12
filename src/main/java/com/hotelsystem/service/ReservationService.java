@@ -54,6 +54,17 @@ public class ReservationService {
             throw new RuntimeException("Check-out has to be at least 1 night after Check-in");
         }
 
+        //Validate if the room is occupied those dates
+        boolean roomOccupied = reservationRepository.existsByRoomAndDatesOverlap(
+                room.getId(),
+                dto.getCheckIn(),
+                dto.getCheckOut()
+        );
+
+        if (roomOccupied){
+            throw new RuntimeException("The room is reserved already for those dates");
+        }
+
         // Map reservation to dto
         Reservation reservation = mapper.reservationToDto(dto);
 
