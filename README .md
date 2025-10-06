@@ -106,6 +106,9 @@ Test all endpoints using Postman.
 
 Just import it into Postman and start testing!
 
+Or you can run the app and test the endpoints using Swagger UI using the link bellow
+http://localhost:8080/swagger-ui/index.html
+
 ##  Author
 
 **Rainer Rodríguez**  
