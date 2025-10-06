@@ -53,7 +53,7 @@ public class RoomController {
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteRoom(@PathVariable Long id) {
         roomService.deleteRoom(id);
-        return ResponseEntity.ok("Room deleted successfully");
+        return ResponseEntity.noContent().build();
     }
 }
 
