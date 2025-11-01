@@ -25,6 +25,17 @@ dependency-reduced-pom.xml
 # VS Code
 .vscode/
 
+# .gitignore
+.env
+.env.*
+docker-compose.override.yml
+
+# Docker
+**/build/
+**/dist/
+**/tmp/
+
+
 # Logs
 *.log
 
