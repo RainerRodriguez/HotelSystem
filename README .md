@@ -106,8 +106,17 @@ Test all endpoints using Postman.
 
 Just import it into Postman and start testing!
 
-Or you can run the app and test the endpoints using Swagger UI using the link bellow
+If you are running the application from your IDE (IntelliJ) or locally with Maven:
 http://localhost:8080/swagger-ui/index.html
+
+If you are using Docker Compose to start the application and the database:
+use the terminal and type:
+docker compose up --build
+
+Then access Swagger UI at:
+http://localhost:8081/swagger-ui/index.html
+
+Note: Port 8081 is used for the Docker container, while port 8080 is for local execution
 
 ##  Author
 
